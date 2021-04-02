@@ -6,9 +6,8 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './Home';
-import CafeProject from './CafeProject';
+import ProductList from './ProductList';
 import ScrollToTop from './ScrollToTop';
-import ECommerceProject from './ECommerceProject';
 import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/carousel.css'
@@ -86,8 +85,7 @@ const App = () => {
           <main>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/cafeproject" component={CafeProject} />
-              <Route path="/ecommerceproject" component={ECommerceProject} />
+              <Route path="/products" component={ProductList}></Route>
             </Switch>
           </main>
         </div>

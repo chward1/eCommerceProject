@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios';
 import React from 'react';
-import lavenderField from '../images/eCommerceImages/lavenderField.jpeg';
-import mountainsThroughLeaves from '../images/eCommerceImages/mountainsThroughLeaves.jpg'
-import oceanGrass from '../images/eCommerceImages/oceanGrass.jpeg'
-import oceanMoon from '../images/eCommerceImages/oceanMoon.jpeg'
-import oceanShore from '../images/eCommerceImages/oceanShore.jpeg'
-import pointReyes from '../images/eCommerceImages/pointReyes.jpeg'
-import russianRiver from '../images/eCommerceImages/russianRiver.jpeg'
-import sandDunes from '../images/eCommerceImages/sandDunes.jpeg'
-import waterfall from '../images/eCommerceImages/waterfall.jpeg'
-import header from '../images/eCommerceImages/russianRiverHeader.jpeg'
-import '../styles/eCommerceStyles/style.css'
+import lavenderField from '../images/lavenderField.jpeg';
+import mountainsThroughLeaves from '../images/mountainsThroughLeaves.jpg'
+import oceanGrass from '../images/oceanGrass.jpeg'
+import oceanMoon from '../images/oceanMoon.jpeg'
+import oceanShore from '../images/oceanShore.jpeg'
+import pointReyes from '../images/pointReyes.jpeg'
+import russianRiver from '../images/russianRiver.jpeg'
+import sandDunes from '../images/sandDunes.jpeg'
+import waterfall from '../images/waterfall.jpeg'
+import header from '../images/russianRiverHeader.jpeg'
+import '../styles/style.css'
 
 
 
