@@ -1,0 +1,56 @@
+#header {
+    background: url('/src/images/eCommerceImages/russianRiverHeader.jpeg') no-repeat relative; 
+    height: auto;
+    width: 100%;
+  }
+
+header h1#brand{
+  color: white;
+  font-size: 70px;
+}
+
+p#header-quote {
+  color: white;
+}
+
+#banner-container {
+    z-index: 100;
+    position: absolute;
+    Top: 40%;
+    right: 20%;
+    text-align: center;
+}
+
+h2.print-shop, h6.print-shop {
+  text-align: center;
+}
+
+img.photo-shop {
+	width: 400px;
+	height: 400px;
+  float: left;
+  padding: 10px;
+
+}
+
+div.product-description {
+  text-align: center;
+  line-height: .75;
+  padding-top: 10px;
+}
+
+a.product-link {
+  text-decoration: none;
+  color:#5a5a5a;
+  font-size: .9em;
+}
+
+#product {
+  transition: all .5s
+}
+
+#product :hover {
+  box-shadow: 0 .5em .5em -.4em #5a5a5a;
+  transform: translateY(-1px);
+}
+
