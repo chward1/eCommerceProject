@@ -6,12 +6,16 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './Home';
+<<<<<<< Updated upstream
 import ProductList from './ProductList';
+=======
+>>>>>>> Stashed changes
 import ScrollToTop from './ScrollToTop';
 import '../styles/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/carousel.css'
 import 'popper.js/dist/popper.min.js'
+import ProductList from './ProductList';
 
 const App = () => {
   const handleOpenCloseNav = () => {
@@ -85,7 +89,11 @@ const App = () => {
           <main>
             <Switch>
               <Route exact path="/" component={Home} />
+<<<<<<< Updated upstream
               <Route path="/products" component={ProductList}></Route>
+=======
+              <Route path="/products" component={ProductList} />
+>>>>>>> Stashed changes
             </Switch>
           </main>
         </div>

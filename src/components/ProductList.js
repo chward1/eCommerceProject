@@ -1,25 +1,38 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
 
 export default function ProductList() {
-    const [products, setProducts] = useState([])
+    const products = [
+        {
+            name: 'Russian River', 
+            image: './src/images/russianRiver.jpeg',
+            price: 10.00,
+            alt:''
+        }, 
+        {
+            name: 'Lavender Field', 
+            image: './src/images/lavenderField.jpeg',
+            price: 10.00,
+            alt:''
+        },
+        {
+            name: 'Ocean Grass', 
+            image: './src/images/oceanGrass.jpeg',
+            price: 10.00,
+            alt:''
+        }
+    ]
 
-    const loadData = async () => {
-        const result = await axios('http://localhost:3003/products')
-        setProducts(result.data.result)
-    }
-    useEffect(() => {
-        loadData()
-        return () => { }
-    }, []);
-
-    return (
-        <ul>
-            {products.map(product => (
-                <li key={product.id}>
-                    <p>{product.name}</p>
-                </li>
-            ))}
-        </ul>
-    );
+    return <>
+    <div className="row">
+    {products.map((product)=>(<div className="col" id="product">
+        <a href="#" className="card product-link">
+            <img className="img-fluid photo-shop" src={require(`${product.image}`)} alt={product.alt} />
+            <div className="product-description">
+                <p>{product.name}</p>
+                <p>{product.price}</p>
+            </div>
+        </a>
+    </div>))}
+</div>
+</>
 }
